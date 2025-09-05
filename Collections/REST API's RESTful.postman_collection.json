@@ -1,0 +1,25 @@
+{
+	"info": {
+		"_postman_id": "cd653ff6-918f-4255-9958-7dddd837bc7b",
+		"name": "REST API's RESTful",
+		"description": "REST API's RESTful from 0 with Java, Spring Boot, Kubernetes and Docker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13750733"
+	},
+	"item": [
+		{
+			"name": "person",
+			"item": []
+		},
+		{
+			"name": "book",
+			"item": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080"
+		}
+	]
+}
