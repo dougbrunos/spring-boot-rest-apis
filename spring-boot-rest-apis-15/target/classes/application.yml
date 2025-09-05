@@ -1,0 +1,29 @@
+cors:
+    originPatterns: https://localhost:8080,https://localhost:3000,https://localhost:8081,https://mercolab.com.br
+    
+spring:
+    application:
+        name: spring-boot-rest-apis
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/spring_boot_rest_apis?useTimezone=true&serverTimezone=UTC
+        username: root
+        password: root
+    jpa:
+        hibernate:
+            ddl-auto: none
+            # ddl-auto: update
+        properties:
+            hibernate:
+        show-sql: false
+        open-in-view: false
+
+logging:
+    level:
+        # root: WARN
+        '[com.github.dougbrunos]':  DEBUG
+
+spring-doc:
+    paths-to-match: /api/**/v1/**
+    swagger-ui:
+        use-root-path: true

@@ -1,0 +1,38 @@
+server:
+    port: 8888
+cors:
+    originPatterns: https://localhost:8080,https://localhost:3000,https://localhost:8081,https://mercolab.com.br
+
+spring:
+    application:
+        name: spring-boot-rest-apis
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+        properties:
+            hibernate:
+                '[format_sql]': true
+        show-sql: false
+        open-in-view: false
+    profiles:
+        active: test
+
+logging:
+    level:
+        # root: WARN
+        '[com.github.dougbrunos]':  DEBUG
+        '[org.testcontainers]': INFO
+        '[com.github.dockerjava]': WARN
+
+springdoc:
+    paths-to-match: /api/**/v1/**
+    swagger-ui:
+        use-root-path: true
+
+---
+spring:
+    config:
+        activate:
+            on-profile: test

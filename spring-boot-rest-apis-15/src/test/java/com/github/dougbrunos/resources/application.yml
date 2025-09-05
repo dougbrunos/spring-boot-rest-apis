@@ -1,0 +1,26 @@
+server:
+    port: 8888
+
+spring:
+    application:
+        name: spring-boot-rest-apis
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: none
+            # ddl-auto: update
+        properties:
+            hibernate:
+        show-sql: false
+        open-in-view: false
+
+logging:
+    level:
+        # root: WARN
+        '[com.github.dougbrunos]':  DEBUG
+
+spring-doc:
+    paths-to-match: /api/**/v1/**
+    swagger-ui:
+        use-root-path: true

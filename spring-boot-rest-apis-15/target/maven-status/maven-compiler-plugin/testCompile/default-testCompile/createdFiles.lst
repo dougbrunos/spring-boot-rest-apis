@@ -1,0 +1,7 @@
+com\github\dougbrunos\integrationtests\swagger\SwaggerIntegrationTest.class
+com\github\dougbrunos\unittests\mapper\ObjectMapperTests.class
+com\github\dougbrunos\unittests\services\PersonServicesTest.class
+com\github\dougbrunos\integrationtests\AbstractIntegrationTest$Initializer.class
+com\github\dougbrunos\integrationtests\AbstractIntegrationTest.class
+com\github\dougbrunos\unittests\mapper\mocks\MockPerson.class
+com\github\dougbrunos\config\TestConfigs.class
